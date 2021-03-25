@@ -2,20 +2,15 @@
 def play_fork():
     print("----Welcome to the Fork Game----")
 
-<<<<<<< HEAD
     palavra_secreta = "python"
 
-    
-=======
-    secret_word = "building"
+    enforcou = False
 
-    forked = False
+    acertou = False
 
-    hit = False
-
-    while not forked and not hit:
-        print("Playing . . .")
->>>>>>> f2ebc2c5cd256cec2ecb231b40af7ae67153c437
+    while not enforcou and not acertou:
+        chute = input("Qual letra ?")
+        print("jogando . . .")
 
     print("End of the Game")
 
