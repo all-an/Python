@@ -39,14 +39,14 @@ def play_guess():
         right = secret_number == typed
 
         if right:
-            print("You got the number, and your score is {} ." .format(score))
+            print("You got the number , and your score is {} ." .format(score))
             break
         else:
             if typed > secret_number:
-                print("You are wrong, your number is higher.")
+                print("You are wrong , your number is higher.")
                 print("Try again !")
             elif typed < secret_number:
-                print("You are wrong, your number is lower.")
+                print("You are wrong,your number is lower.")
                 print("Try again !")
             score_lost = abs(secret_number - typed)
             score = score - score_lost
