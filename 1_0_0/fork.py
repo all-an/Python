@@ -9,7 +9,12 @@ def play_fork():
     acertou = False
 
     while not enforcou and not acertou:
-        chute = input("Qual letra ?")
+        chute = input("Qual letra ? ")
+
+        for letra in palavra_secreta:
+            if(chute == letra):
+                print(chute)
+
         print("jogando . . .")
 
     print("End of the Game")
