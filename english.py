@@ -1,4 +1,4 @@
-word1 = "Butterscotch"
+word1 = "Mba'éichapa"
 sentence1 = "He's rummaging through the cabinets and shelves inside the house."
 
 def part2():
@@ -11,7 +11,7 @@ def part2():
         part2() 
 
 def game():
-    attempt = input("Manteiga de Caramelo: ")
+    attempt = input("Olá como vai? : ")
     if attempt == word1:
         print("Congratulations!")
         part2()
