@@ -31,7 +31,7 @@ def game():
         part2()
     else:
         print("Wrong, correct is ", frase2)
-        print("Tente Novamente")
+        print("Tente Novamente !")
         game()   
 
 game()
