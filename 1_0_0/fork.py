@@ -1,22 +1,24 @@
 def play_fork():
     print("----Welcome to the Fork Game----")
 
-    palavra_secreta = "python"
+    palavra_secreta = "banana"
 
     enforcou = False
 
     acertou = False
 
     while not enforcou and not acertou:
+        index = 0
         chute = input("Qual letra ? ")
 
         for letra in palavra_secreta:
             if(chute == letra):
-                print(chute)
+                index = index + 1
+                print("Encontrei a letra {} na posição {} " .format(letra, index))
 
-    print("jogando . . .")
 
-    print("End of the Game")
+    #print("jogando . . .")
 
+    #print("End of the Game")
 if __name__ == "__main__":
     play_fork()
