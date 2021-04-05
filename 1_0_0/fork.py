@@ -14,7 +14,7 @@ def play_fork():
 
         index = 0
         for letra in palavra_secreta:
-            if(chute == letra):
+            if(chute.upper() == letra.upper()):
                 index = index + 1
                 print("Encontrei a letra {} na posição {} " .format(letra, index))
 
