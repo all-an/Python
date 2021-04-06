@@ -11,6 +11,7 @@ def play_fork():
 
         index = 0
         chute = input("Qual letra ? ")
+        chute = chute.strip()
 
         index = 0
         for letra in palavra_secreta:
