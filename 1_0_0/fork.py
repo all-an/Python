@@ -2,6 +2,7 @@ def play_fork():
     print("----Welcome to the Fork Game----")
 
     palavra_secreta = "banana"
+    letras_acertadas = ["_","_","_","_","_","_"]
 
     enforcou = False
     acertou = False
@@ -15,10 +16,11 @@ def play_fork():
         index = 0
         for letra in palavra_secreta:
             if(chute.upper() == letra.upper()):
-                index = index + 1
-                print("Encontrei a letra {} na posição {} " .format(letra, index))
+                letras_acertadas[index] = letra
 
-        print("jogando . . .")
+            index = index + 1
+        # print("Acertou uma letra.")
+        print(letras_acertadas)
 
     print(" Fim ! ")
 if __name__ == "__main__":
