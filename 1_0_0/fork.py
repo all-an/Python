@@ -3,7 +3,6 @@ def play_fork():
 
     palavra_secreta = "banana"
 
-
     enforcou = False
     acertou = False
 
