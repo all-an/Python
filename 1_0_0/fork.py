@@ -6,6 +6,7 @@ def play_fork():
 
     enforcou = False
     acertou = False
+    erros = 6
 
     while not enforcou and not acertou:
 
@@ -13,14 +14,21 @@ def play_fork():
         chute = input("Qual letra ? ")
         chute = chute.strip()
 
-        index = 0
-        for letra in palavra_secreta:
-            if(chute.upper() == letra.upper()):
-                letras_acertadas[index] = letra
+        if(chute.upper() in palavra_secreta.upper()):
+            index = 0
+            for letra in palavra_secreta:
+                if(chute.upper() == letra.upper()):
+                    letras_acertadas[index] = letra
+                index = index + 1
+            print("Acertou uma letra.")
+        else:
+            erros -= 1
+            print("Errou ! Você tem mais {} tentativas. ".format(erros))
 
-            index = index + 1
         # print("Acertou uma letra.")
-        print(letras_acertadas)
+
+        enforcou = erros == 0
+        print('  '.join(letras_acertadas))
 
     print(" Fim ! ")
 if __name__ == "__main__":
