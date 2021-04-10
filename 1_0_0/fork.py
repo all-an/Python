@@ -1,8 +1,8 @@
 def play_fork():
     print("----Welcome to the Fork Game----")
 
-    palavra_secreta = "banana".upper()
-    letras_acertadas = ["_","_","_","_","_","_"]
+    palavra_secreta = "signo".upper()
+    letras_acertadas = ["_" for letra in palavra_secreta]
 
     enforcou = False
     acertou = False
