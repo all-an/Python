@@ -8,8 +8,6 @@ def play_fork():
     acertou = False
     erros = 6
     fimMensagem = "Vocẽ perdeu !"
-    if acertou:
-        fimMensagem == " Parabéns !"
 
     while not enforcou and not acertou:
 
@@ -34,6 +32,8 @@ def play_fork():
         acertou = "_" not in letras_acertadas
         print('  '.join(letras_acertadas))
 
+    if erros > 0:
+        fimMensagem = " Parabéns !"
     print(" Fim do Jogo !", fimMensagem)
 if __name__ == "__main__":
     play_fork()
