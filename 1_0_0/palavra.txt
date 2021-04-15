@@ -1,2 +1,6 @@
-doido 
-louco louco 
+doido
+louco
+banana
+melancia
+morango
+maça
